@@ -1,0 +1,6 @@
+<ul *ngFor="let cocktail of cocktails | async">
+    <li>{{ cocktail.name }}</li>
+    <li>{{ cocktail.price }}</li>
+    <li><img src="{{ cocktail.img }}" alt="{{ cocktail.name }}" /></li>
+    <hr />
+  </ul>
